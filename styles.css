@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(sejarah.jpg);
+
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #ff5733;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Menampilkan item secara horizontal */
+    position: relative; /* Untuk submenu */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+.submenu {
+    display: none; /* Menyembunyikan submenu secara default */
+    position: absolute; /* Mengatur posisi submenu */
+    top: 100%; /* Menempatkan submenu di bawah item induk */
+    left: 0;
+    background: #ff5733; /* Warna latar belakang submenu */
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Menampilkan submenu saat hover pada item induk */
+}
+
+.submenu li {
+    display: block; /* Menampilkan item submenu secara vertikal */
+    margin: 0; /* Menghapus margin */
+}
+
+.submenu li a {
+    padding: 10px 20px; /* Menambahkan padding pada item submenu */
+    display: block; /* Menampilkan item submenu sebagai blok */
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    background: white;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.content {
+    display: flex; /* Menggunakan Flexbox untuk menampilkan gambar dan teks berdampingan */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-image {
+    width: 40%; /* Mengatur lebar gambar */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.text-content {
+    width: 60%; /* Mengatur lebar teks */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+}
+
+
+
+footer {
+    background: #ff5733;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #ff5733;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
